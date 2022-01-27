@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swiftris View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SwiftrisViewController" customModule="Swiftris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3W-aq-aeh" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.27000000000000002" green="0.27000000000000002" blue="0.27000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UHi-3b-vel"/>
+                        <color key="backgroundColor" red="0.27000000000000002" green="0.27000000000000002" blue="0.27000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UHi-3b-vel" firstAttribute="bottom" secondItem="w3W-aq-aeh" secondAttribute="bottom" id="KGP-o3-VIl"/>
+                            <constraint firstItem="w3W-aq-aeh" firstAttribute="leading" secondItem="UHi-3b-vel" secondAttribute="leading" id="Xxm-tf-e1P"/>
+                            <constraint firstItem="w3W-aq-aeh" firstAttribute="top" secondItem="UHi-3b-vel" secondAttribute="top" id="cmD-kD-gsf"/>
+                            <constraint firstItem="UHi-3b-vel" firstAttribute="trailing" secondItem="w3W-aq-aeh" secondAttribute="trailing" id="wRl-Hs-d6C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="w3W-aq-aeh" id="eaS-8b-bbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="89"/>
+        </scene>
+    </scenes>
+</document>
